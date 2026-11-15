@@ -1,0 +1,14 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2026-11-15-08-30-00
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
+1700037001.000	C101	192.168.1.105	54321	1.1.1.1	53	udp	101	0.012	www.google.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	142.250.190.68	300.000000	F
+1700037002.000	C102	192.168.1.105	54322	1.1.1.1	53	udp	102	0.014	github.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	140.82.121.3	60.000000	F
+1700037060.000	C201	192.168.1.200	49152	8.8.8.8	53	udp	201	0.045	4a7f9c2d1b8e3a5c6d0e2f4a8b1c3d5e7f9a0b2c4d6e8f.tunnel.darkc2.org	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	198.51.100.1	10.000000	F
+1700037062.000	C202	192.168.1.200	49153	8.8.8.8	53	udp	202	0.041	b8e3a5c6d0e2f4a8b1c3d5e7f9a0b2c4d6e8f0a2b4c6d8.tunnel.darkc2.org	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	198.51.100.1	10.000000	F
+1700037070.000	C203	192.168.1.205	49154	8.8.8.8	53	udp	203	0.052	dnscat.0123456789abcdef0123456789abcdef01234567.exfilchannel.net	1	C_INTERNET	16	TXT	0	NOERROR	F	F	T	T	0	"ack001"	5.000000	F
+1700037072.000	C204	192.168.1.205	49155	8.8.8.8	53	udp	204	0.050	dnscat.abcdef0123456789abcdef0123456789abcdef0123.exfilchannel.net	1	C_INTERNET	16	TXT	0	NOERROR	F	F	T	T	0	"ack002"	5.000000	F
+#close	2026-11-15-08-35-00

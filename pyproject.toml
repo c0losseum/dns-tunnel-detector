@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dns-tunnel-detector"
+version = "1.0.0"
+description = "A cybersecurity tool to detect DNS covert channels, tunneling, and exfiltration via entropy and lexical heuristics."
+readme = "README.md"
+authors = [{ name = "c0losseum" }]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: System :: Networking :: Monitoring",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+full = [
+    "rich>=13.0.0",
+    "scapy>=2.5.0",
+    "tldextract>=5.0.0",
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "flake8>=6.1.0",
+    "mypy>=1.6.0",
+    "black>=23.9.0",
+]
+
+[project.scripts]
+dns-detector = "dns_detector.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,11 @@
+# Core framework requires zero external dependencies (Python 3.8+ standard library).
+#
+# Optional dependencies to unlock advanced capabilities:
+# Terminal UI dashboards & color tables:
+rich>=13.0.0
+
+# Live network interface sniffing & full PCAP/PCAPNG parsing:
+scapy>=2.5.0
+
+# Advanced Public Suffix List domain resolution:
+tldextract>=5.0.0
